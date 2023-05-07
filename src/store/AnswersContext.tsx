@@ -27,13 +27,10 @@ export function AnswersContextProvider({ children }: { children: React.ReactNode
   };
 
   const pushAnswer = (answer: boolean, question: string, index: number) => {
-    console.log(answer + question, index);
-
     setAnswers((prevAnswers) => {
       const newAnswers = [...prevAnswers];
       if (newAnswers[index]) newAnswers[index] = { choice: answer, question: question };
       else newAnswers.push({ choice: answer, question: question });
-      console.log(newAnswers);
       return newAnswers;
     });
   };
