@@ -3,7 +3,11 @@ Tech stack: vite, react, react-router-dom, react-form-hook, tailwind, axios
 
 Requirements: Node.js version 14.18+
 
-Steps to run code in development:
+To run the app in development mode run these commands on your terminal:
+
+1. install vite
+
+ ``npm install -g vite``
 
 1. install dependencies (in the root folder)
 
